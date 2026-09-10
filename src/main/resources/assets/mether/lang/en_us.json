@@ -181,5 +181,21 @@
   "item.mether.glowing_mushroom": "Glowing Mushroom",
   "item.mether.crystal_honey": "Crystal Honey",
   "item.mether.crystal_apple": "Crystal Apple",
-  "item.mether.luminite_fruit": "Luminite Fruit"
+  "item.mether.luminite_fruit": "Luminite Fruit",
+  "advancements.mether.root.title": "Welcome to Mether",
+  "advancements.mether.root.description": "Enter the Crystal Dimension",
+  "advancements.mether.luminarch_defeat.title": "Light of the Luminarch",
+  "advancements.mether.luminarch_defeat.description": "Defeat the Luminarch boss",
+  "advancements.mether.all_bosses.title": "Crystal Champion",
+  "advancements.mether.all_bosses.description": "Defeat all bosses in the Mether",
+  "advancements.mether.crystal_collector.title": "Crystal Collector",
+  "advancements.mether.crystal_collector.description": "Collect one of each crystal type",
+  "advancements.mether.prismatic_gear.title": "Prismatic Mastery",
+  "advancements.mether.prismatic_gear.description": "Craft Prismarite equipment",
+  "item.mether.crystal_resonator": "Crystal Resonator",
+  "item.mether.crystal_compass": "Crystal Compass",
+  "item.mether.growth_catalyst": "Growth Catalyst",
+  "item.mether.teleportation_crystal": "Teleportation Crystal",
+  "item.mether.crystal_lens": "Crystal Lens",
+  "item.mether.energy_cell": "Energy Cell"
 }
