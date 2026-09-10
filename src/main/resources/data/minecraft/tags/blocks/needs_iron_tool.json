@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "mether:luminite_ore",
+    "mether:luminite_block",
+    "mether:rubicite_ore",
+    "mether:rubicite_block",
+    "mether:sapphirite_ore",
+    "mether:sapphirite_block",
+    "mether:emerite_ore",
+    "mether:emerite_block",
+    "mether:citrite_ore",
+    "mether:citrite_block",
+    "mether:amethine_ore",
+    "mether:amethine_block",
+    "mether:obsidite_ore",
+    "mether:obsidite_block",
+    "mether:celestite_ore",
+    "mether:celestite_block",
+    "mether:pyrope_ore",
+    "mether:pyrope_block",
+    "mether:prismarite_ore",
+    "mether:prismarite_block",
+    "mether:crystal_stone",
+    "mether:luminite_portal_frame"
+  ]
+}
