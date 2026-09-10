@@ -1,11 +1,13 @@
 package com.menear.mether.block;
 
 import com.menear.mether.Mether;
+import com.menear.mether.block.custom.MetherPortalBlock;
 import com.menear.mether.util.CrystalType;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -39,6 +41,15 @@ public class MetherBlocks {
     public static final Block LUMINITE_PORTAL_FRAME = registerBlock("luminite_portal_frame",
         new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN).luminance(state -> 5)));
     
+    // Portal Block
+    public static final Block METHER_PORTAL = registerBlockNoItem("mether_portal",
+        new MetherPortalBlock(AbstractBlock.Settings.create()
+            .noCollision()
+            .luminance(state -> 15)
+            .strength(-1.0f, 3600000.0f)
+            .dropsNothing()
+            .mapColor(MapColor.PURPLE)));
+    
     static {
         // Register crystal ores
         for (CrystalType type : CrystalType.values()) {
@@ -58,6 +69,10 @@ public class MetherBlocks {
     
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Mether.MOD_ID, name), block);
+    }
+    
+    private static Block registerBlockNoItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(Mether.MOD_ID, name), block);
     }
     

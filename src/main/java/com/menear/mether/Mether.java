@@ -4,6 +4,7 @@ import com.menear.mether.block.MetherBlocks;
 import com.menear.mether.item.MetherItems;
 import com.menear.mether.item.armor.MetherArmorItems;
 import com.menear.mether.item.tool.MetherToolItems;
+import com.menear.mether.world.dimension.MetherDimension;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +22,9 @@ public class Mether implements ModInitializer {
         MetherItems.initialize();
         MetherToolItems.initialize();
         MetherArmorItems.initialize();
+        
+        // Register dimension
+        MetherDimension.initialize();
         
         LOGGER.info("Mether mod initialized successfully!");
     }
