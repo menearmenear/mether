@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PRP",
+    "RDR",
+    "PRP"
+  ],
+  "key": {
+    "P": { "item": "mether:refined_pyrope" },
+    "R": { "item": "minecraft:redstone" },
+    "D": { "item": "mether:crystal_dust" }
+  },
+  "result": { "id": "mether:energy_cell", "count": 1 }
+}

@@ -3,7 +3,10 @@
   "minVersion": "0.8",
   "package": "com.menear.mether.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "PlayerMixin",
+    "WorldMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1

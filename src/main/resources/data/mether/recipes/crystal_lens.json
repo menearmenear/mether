@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SDS",
+    " S "
+  ],
+  "key": {
+    "S": { "item": "mether:refined_luminite" },
+    "D": { "item": "minecraft:glass_pane" }
+  },
+  "result": { "id": "mether:crystal_lens", "count": 1 }
+}

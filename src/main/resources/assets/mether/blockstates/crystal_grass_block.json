@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": { "model": "mether:block/crystal_grass_block" }
+    "snowy=false": { "model": "mether:block/crystal_grass_block" },
+    "snowy=true": { "model": "mether:block/crystal_grass_block_snowy" }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CLC",
+    " C "
+  ],
+  "key": {
+    "C": { "item": "mether:crystal_dust" },
+    "L": { "item": "minecraft:compass" }
+  },
+  "result": { "id": "mether:crystal_compass", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    " B ",
+    "   "
+  ],
+  "key": {
+    "E": { "item": "mether:emerite_shard" },
+    "B": { "item": "mether:crystal_berries" }
+  },
+  "result": { "id": "mether:growth_catalyst", "count": 2 }
+}

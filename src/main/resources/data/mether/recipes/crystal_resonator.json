@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " C ",
+    " L "
+  ],
+  "key": {
+    "A": { "item": "mether:amethine_shard" },
+    "C": { "item": "mether:crystal_dust" },
+    "L": { "item": "mether:luminite_shard" }
+  },
+  "result": { "id": "mether:crystal_resonator", "count": 1 }
+}

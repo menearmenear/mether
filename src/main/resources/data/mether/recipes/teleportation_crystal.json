@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ECE",
+    "CLC",
+    "ECE"
+  ],
+  "key": {
+    "E": { "item": "mether:celestite_shard" },
+    "C": { "item": "mether:crystal_dust" },
+    "L": { "item": "mether:ender_pearl" }
+  },
+  "result": { "id": "mether:teleportation_crystal", "count": 1 }
+}

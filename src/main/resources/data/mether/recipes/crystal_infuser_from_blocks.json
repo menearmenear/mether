@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LBL",
+    "B B",
+    "LBL"
+  ],
+  "key": {
+    "L": { "item": "mether:amethine_block" },
+    "B": { "item": "mether:crystal_stone" }
+  },
+  "result": { "id": "mether:crystal_infuser", "count": 1 }
+}
