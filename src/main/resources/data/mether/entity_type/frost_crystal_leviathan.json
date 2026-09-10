@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:frost_crystal_leviathan",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

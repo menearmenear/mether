@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:storm_crystal_dragon",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

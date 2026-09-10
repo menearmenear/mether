@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:prismatic_overlord",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

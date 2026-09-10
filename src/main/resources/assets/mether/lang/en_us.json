@@ -158,6 +158,12 @@
   "entity.mether.crystal_mage": "Crystal Mage",
   "entity.mether.unstable_elemental": "Unstable Elemental",
   "entity.mether.luminarch": "Luminarch",
+  "entity.mether.infernal_crystal_titan": "Infernal Crystal Titan",
+  "entity.mether.frost_crystal_leviathan": "Frost Crystal Leviathan",
+  "entity.mether.verdant_crystal_hydra": "Verdant Crystal Hydra",
+  "entity.mether.storm_crystal_dragon": "Storm Crystal Dragon",
+  "entity.mether.void_crystal_serpent": "Void Crystal Serpent",
+  "entity.mether.prismatic_overlord": "Prismatic Overlord",
   "container.mether.crystal_forge": "Crystal Forge",
   "container.mether.crystal_infuser": "Crystal Infuser",
   "biome.mether.crystal_plains": "Crystal Plains",
@@ -170,5 +176,10 @@
   "biome.mether.celestial_islands": "Celestial Islands",
   "mether.dimension.mether": "Mether",
   "mether.key.mether": "Mether",
-  "mether.category.mether": "Mether"
+  "mether.category.mether": "Mether",
+  "item.mether.crystal_berries": "Crystal Berries",
+  "item.mether.glowing_mushroom": "Glowing Mushroom",
+  "item.mether.crystal_honey": "Crystal Honey",
+  "item.mether.crystal_apple": "Crystal Apple",
+  "item.mether.luminite_fruit": "Luminite Fruit"
 }

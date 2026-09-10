@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:void_crystal_serpent",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

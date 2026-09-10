@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:infernal_crystal_titan",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

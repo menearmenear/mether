@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:verdant_crystal_hydra",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

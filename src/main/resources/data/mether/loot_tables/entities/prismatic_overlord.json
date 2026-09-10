@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mether:prismarite_core"
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mether:prismarite_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mether:crystal_apple"
+        }
+      ]
+    }
+  ]
+}
