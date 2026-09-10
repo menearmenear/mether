@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": { "item": "mether:prismarite_core" },
+    "title": { "translate": "advancements.mether.all_bosses.title" },
+    "description": { "translate": "advancements.mether.all_bosses.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mether:luminarch_defeat",
+  "criteria": {
+    "kill_prismatic": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "mether:prismatic_overlord"
+        }
+      }
+    }
+  }
+}

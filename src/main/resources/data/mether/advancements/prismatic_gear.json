@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": { "item": "mether:prismarite_pickaxe" },
+    "title": { "translate": "advancements.mether.prismatic_gear.title" },
+    "description": { "translate": "advancements.mether.prismatic_gear.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mether:all_bosses_defeated",
+  "criteria": {
+    "craft_prismarite": {
+      "trigger": "minecraft:crafted_item",
+      "conditions": {
+        "items": [{ "items": ["mether:prismarite_pickaxe"] }]
+      }
+    }
+  }
+}

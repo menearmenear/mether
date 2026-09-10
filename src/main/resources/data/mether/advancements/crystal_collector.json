@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": { "item": "mether:prismarite_shard" },
+    "title": { "translate": "advancements.mether.crystal_collector.title" },
+    "description": { "translate": "advancements.mether.crystal_collector.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mether:root",
+  "criteria": {
+    "luminite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:luminite_shard"] }] }
+    },
+    "rubicite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:rubicite_shard"] }] }
+    },
+    "sapphirite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:sapphirite_shard"] }] }
+    },
+    "emerite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:emerite_shard"] }] }
+    },
+    "citrite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:citrite_shard"] }] }
+    },
+    "amethine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:amethine_shard"] }] }
+    },
+    "obsidite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:obsidite_shard"] }] }
+    },
+    "celestite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:celestite_shard"] }] }
+    },
+    "pyrope": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:pyrope_shard"] }] }
+    },
+    "prismarite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mether:prismarite_shard"] }] }
+    }
+  },
+  "requirements": [["luminite"], ["rubicite"], ["sapphirite"], ["emerite"], ["citrite"], ["amethine"], ["obsidite"], ["celestite"], ["pyrope"], ["prismarite"]]
+}

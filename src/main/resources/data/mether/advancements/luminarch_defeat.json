@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": { "item": "mether:luminite_core" },
+    "title": { "translate": "advancements.mether.luminarch_defeat.title" },
+    "description": { "translate": "advancements.mether.luminarch_defeat.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mether:root",
+  "criteria": {
+    "kill_luminarch": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "mether:luminarch"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": { "item": "mether:crystal_key" },
+    "title": { "translate": "advancements.mether.root.title" },
+    "description": { "translate": "advancements.mether.root.description" },
+    "background": "minecraft:textures/block/amethyst_block.png",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "enter_mether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "mether:mether"
+      }
+    }
+  }
+}
