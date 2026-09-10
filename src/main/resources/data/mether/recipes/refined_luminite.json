@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mether:luminite_shard"
+  },
+  "result": {
+    "id": "mether:refined_luminite",
+    "count": 1
+  },
+  "experience": 0.5,
+  "cookingtime": 200
+}

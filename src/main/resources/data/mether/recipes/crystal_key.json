@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "DCD",
+    " L "
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "C": { "item": "mether:crystal_dust" },
+    "L": { "item": "mether:luminite_shard" }
+  },
+  "result": {
+    "id": "mether:crystal_key",
+    "count": 1
+  }
+}

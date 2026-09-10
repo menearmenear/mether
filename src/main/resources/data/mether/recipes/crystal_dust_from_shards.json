@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "mether:luminite_shard" },
+    { "item": "mether:luminite_shard" },
+    { "item": "mether:luminite_shard" },
+    { "item": "mether:luminite_shard" }
+  ],
+  "result": {
+    "id": "mether:crystal_dust",
+    "count": 1
+  }
+}

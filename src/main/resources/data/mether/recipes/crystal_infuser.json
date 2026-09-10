@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    " E ",
+    "LLL"
+  ],
+  "key": {
+    "A": { "item": "mether:amethine_shard" },
+    "E": { "item": "mether:emerite_shard" },
+    "L": { "item": "mether:luminite_block" }
+  },
+  "result": {
+    "id": "mether:crystal_infuser",
+    "count": 1
+  }
+}

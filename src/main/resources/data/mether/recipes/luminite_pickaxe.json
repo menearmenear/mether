@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " L ",
+    " L "
+  ],
+  "key": {
+    "S": { "item": "mether:refined_luminite" },
+    "L": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "mether:luminite_pickaxe",
+    "count": 1
+  }
+}

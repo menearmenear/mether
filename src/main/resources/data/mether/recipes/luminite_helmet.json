@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "S S",
+    "   "
+  ],
+  "key": {
+    "S": { "item": "mether:refined_luminite" }
+  },
+  "result": {
+    "id": "mether:luminite_helmet",
+    "count": 1
+  }
+}

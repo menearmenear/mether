@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "S S",
+    "LLL"
+  ],
+  "key": {
+    "C": { "item": "mether:crystal_dust" },
+    "S": { "item": "mether:crystal_stone" },
+    "L": { "item": "mether:luminite_shard" }
+  },
+  "result": {
+    "id": "mether:crystal_forge",
+    "count": 1
+  }
+}
