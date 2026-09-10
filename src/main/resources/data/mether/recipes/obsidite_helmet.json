@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RRR", "R R", "   "],
+  "key": { "R": { "item": "mether:refined_obsidite" } },
+  "result": { "id": "mether:obsidite_helmet", "count": 1 }
+}

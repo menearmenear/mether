@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mether:celestite_shard" },
+  "result": { "id": "mether:refined_celestite", "count": 1 },
+  "experience": 0.9,
+  "cookingtime": 250
+}

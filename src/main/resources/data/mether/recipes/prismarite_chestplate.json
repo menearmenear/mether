@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["R R", "RCR", "RRR"],
+  "key": {
+    "R": { "item": "mether:refined_prismarite" },
+    "C": { "item": "mether:prismarite_core" }
+  },
+  "result": { "id": "mether:prismarite_chestplate", "count": 1 }
+}

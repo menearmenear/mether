@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mether:pyrope_shard" },
+  "result": { "id": "mether:refined_pyrope", "count": 1 },
+  "experience": 1.0,
+  "cookingtime": 300
+}

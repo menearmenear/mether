@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mether:prismarite_shard" },
+  "result": { "id": "mether:refined_prismarite", "count": 1 },
+  "experience": 1.2,
+  "cookingtime": 300
+}

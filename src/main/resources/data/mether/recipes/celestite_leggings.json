@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RRR", "R R", "R R"],
+  "key": { "R": { "item": "mether:refined_celestite" } },
+  "result": { "id": "mether:celestite_leggings", "count": 1 }
+}

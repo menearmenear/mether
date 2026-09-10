@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mether:citrite_shard" },
+  "result": { "id": "mether:refined_citrite", "count": 1 },
+  "experience": 0.8,
+  "cookingtime": 200
+}

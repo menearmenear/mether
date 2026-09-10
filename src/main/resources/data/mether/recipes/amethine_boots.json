@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["   ", "R R", "R R"],
+  "key": { "R": { "item": "mether:refined_amethine" } },
+  "result": { "id": "mether:amethine_boots", "count": 1 }
+}

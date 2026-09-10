@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RRR", "RCR", "R R"],
+  "key": {
+    "R": { "item": "mether:refined_prismarite" },
+    "C": { "item": "mether:prismarite_core" }
+  },
+  "result": { "id": "mether:prismarite_leggings", "count": 1 }
+}
