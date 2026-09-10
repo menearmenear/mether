@@ -1,11 +1,11 @@
 {
   "effects": {
-    "sky_color": 13421772,
-    "fog_color": 13421772,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
-    "grass_color": 9470285,
-    "foliage_color": 10387789
+    "sky_color": 16775104,
+    "fog_color": 16768000,
+    "water_color": 16771840,
+    "water_fog_color": 16771840,
+    "grass_color": 16775104,
+    "foliage_color": 16775104
   },
   "spawners": {
     "monster": [],
@@ -32,8 +32,8 @@
     [],
     []
   ],
-  "temperature": 0.8,
-  "downfall": 0.4,
-  "precipitation": "rain",
-  "category": "plains"
+  "temperature": 0.3,
+  "downfall": 0.2,
+  "precipitation": "none",
+  "category": "extreme_hills"
 }
