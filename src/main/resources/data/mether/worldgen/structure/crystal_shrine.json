@@ -1,0 +1,22 @@
+{
+  "structure": {
+    "description": "A small crystal shrine in the Mether dimension",
+    "biomes": [
+      "mether:crystal_plains"
+    ],
+    "step": "SURFACE_STRUCTURES",
+    "spawn_overrides": {},
+    "terrain_adaptation": "constant",
+    "structure": {
+      "type": "minecraft:jigsaw",
+      "project_start_to_bottom": false,
+      "start_pool": "mether:crystal_shrine",
+      "start_jigsaw_name": null,
+      "max_distance_from_center": 8,
+      "random_spread": true,
+      "spacing": 32,
+      "separation": 8,
+      "salt": 12345
+    }
+  }
+}

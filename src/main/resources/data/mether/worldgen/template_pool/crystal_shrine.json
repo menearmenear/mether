@@ -1,0 +1,15 @@
+{
+  "fallback": "mether:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "mether:crystal_shrine",
+        "projection": "minecraft:rigid",
+        "processors": []
+      },
+      "weight": 1
+    }
+  ],
+  "name": "mether:crystal_shrine"
+}
