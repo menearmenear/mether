@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", " S", " S"],
+  "key": { "R": { "item": "mether:refined_luminite" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:luminite_hoe", "count": 1 }
+}

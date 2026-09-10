@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", "RS", " S"],
+  "key": { "R": { "item": "mether:refined_obsidite" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:obsidite_axe", "count": 1 }
+}

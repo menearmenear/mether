@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", "RS", " S"],
+  "key": { "R": { "item": "mether:refined_citrite" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:citrite_axe", "count": 1 }
+}

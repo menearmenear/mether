@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", "RS", " S"],
+  "key": { "R": { "item": "mether:refined_pyrope" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:pyrope_axe", "count": 1 }
+}

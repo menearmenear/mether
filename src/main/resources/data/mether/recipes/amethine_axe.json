@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", "RS", " S"],
+  "key": { "R": { "item": "mether:refined_amethine" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:amethine_axe", "count": 1 }
+}

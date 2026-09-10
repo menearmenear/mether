@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RR", "RS", " S"],
+  "key": { "R": { "item": "mether:refined_emerite" }, "S": { "item": "minecraft:stick" } },
+  "result": { "id": "mether:emerite_axe", "count": 1 }
+}
