@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mether:luminite_block",
+    "mether:rubicite_block",
+    "mether:sapphirite_block",
+    "mether:emerite_block",
+    "mether:citrite_block",
+    "mether:amethine_block",
+    "mether:obsidite_block",
+    "mether:celestite_block",
+    "mether:pyrope_block",
+    "mether:prismarite_block"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mether:luminite_shard",
+    "mether:rubicite_shard",
+    "mether:sapphirite_shard",
+    "mether:emerite_shard",
+    "mether:citrite_shard",
+    "mether:amethine_shard",
+    "mether:obsidite_shard",
+    "mether:celestite_shard",
+    "mether:pyrope_shard",
+    "mether:prismarite_shard"
+  ]
+}

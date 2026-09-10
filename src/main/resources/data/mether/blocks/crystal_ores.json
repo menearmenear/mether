@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mether:luminite_ore",
+    "mether:rubicite_ore",
+    "mether:sapphirite_ore",
+    "mether:emerite_ore",
+    "mether:citrite_ore",
+    "mether:amethine_ore",
+    "mether:obsidite_ore",
+    "mether:celestite_ore",
+    "mether:pyrope_ore",
+    "mether:prismarite_ore"
+  ]
+}

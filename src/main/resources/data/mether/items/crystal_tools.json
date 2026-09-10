@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mether:luminite_pickaxe", "mether:luminite_axe", "mether:luminite_shovel", "mether:luminite_hoe", "mether:luminite_sword",
+    "mether:rubicite_pickaxe", "mether:rubicite_axe", "mether:rubicite_shovel", "mether:rubicite_hoe", "mether:rubicite_sword",
+    "mether:sapphirite_pickaxe", "mether:sapphirite_axe", "mether:sapphirite_shovel", "mether:sapphirite_hoe", "mether:sapphirite_sword",
+    "mether:emerite_pickaxe", "mether:emerite_axe", "mether:emerite_shovel", "mether:emerite_hoe", "mether:emerite_sword",
+    "mether:citrite_pickaxe", "mether:citrite_axe", "mether:citrite_shovel", "mether:citrite_hoe", "mether:citrite_sword",
+    "mether:amethine_pickaxe", "mether:amethine_axe", "mether:amethine_shovel", "mether:amethine_hoe", "mether:amethine_sword",
+    "mether:obsidite_pickaxe", "mether:obsidite_axe", "mether:obsidite_shovel", "mether:obsidite_hoe", "mether:obsidite_sword",
+    "mether:celestite_pickaxe", "mether:celestite_axe", "mether:celestite_shovel", "mether:celestite_hoe", "mether:celestite_sword",
+    "mether:pyrope_pickaxe", "mether:pyrope_axe", "mether:pyrope_shovel", "mether:pyrope_hoe", "mether:pyrope_sword",
+    "mether:prismarite_pickaxe", "mether:prismarite_axe", "mether:prismarite_shovel", "mether:prismarite_hoe", "mether:prismarite_sword"
+  ]
+}
