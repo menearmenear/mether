@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "mether",
+  "version": "${version}",
+  "name": "Mether",
+  "description": "A large-scale dimension mod featuring new biomes, mobs, bosses, equipment tiers, and complex progression",
+  "authors": [
+    "menear"
+  ],
+  "contact": {
+    "homepage": "https://github.com/menear/mether",
+    "sources": "https://github.com/menear/mether"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/mether/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.menear.mether.Mether"
+    ],
+    "client": [
+      "com.menear.mether.client.MetherClient"
+    ]
+  },
+  "mixins": [
+    "mether.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.26.2",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
