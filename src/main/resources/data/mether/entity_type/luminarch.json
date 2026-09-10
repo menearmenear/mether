@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:luminarch",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

@@ -1,9 +1,11 @@
 package com.menear.mether;
 
 import com.menear.mether.block.MetherBlocks;
+import com.menear.mether.entity.MetherEntities;
 import com.menear.mether.item.MetherItems;
 import com.menear.mether.item.armor.MetherArmorItems;
 import com.menear.mether.item.tool.MetherToolItems;
+import com.menear.mether.sound.MetherSounds;
 import com.menear.mether.world.dimension.MetherDimension;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -17,15 +19,14 @@ public class Mether implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing Mether - The Crystal Dimension Mod");
         
-        // Register blocks, items, tools, and armor
         MetherBlocks.initialize();
         MetherItems.initialize();
         MetherToolItems.initialize();
         MetherArmorItems.initialize();
-        
-        // Register dimension
         MetherDimension.initialize();
+        MetherEntities.initialize();
+        MetherSounds.initialize();
         
-        LOGGER.info("Mether mod initialized successfully!");
+        LOGGER.info("Mether mod initialized successfully! All {} registrations complete.", MOD_ID);
     }
 }

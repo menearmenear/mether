@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:unstable_elemental",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

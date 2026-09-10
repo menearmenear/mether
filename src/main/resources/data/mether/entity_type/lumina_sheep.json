@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:lumina_sheep",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

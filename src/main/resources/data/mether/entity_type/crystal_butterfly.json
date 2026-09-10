@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:crystal_butterfly",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

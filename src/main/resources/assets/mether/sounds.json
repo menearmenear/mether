@@ -1,0 +1,107 @@
+{
+  "portal.activate": {
+    "sounds": ["mether:portal/activate"]
+  },
+  "portal.ambient": {
+    "sounds": ["mether:portal/ambient"]
+  },
+  "portal.travel": {
+    "sounds": ["mether:portal/travel"]
+  },
+  "block.crystal.break": {
+    "sounds": ["mether:block/crystal/break"]
+  },
+  "block.crystal.place": {
+    "sounds": ["mether:block/crystal/place"]
+  },
+  "block.crystal.step": {
+    "sounds": ["mether:block/crystal/step"]
+  },
+  "block.crystal.hit": {
+    "sounds": ["mether:block/crystal/hit"]
+  },
+  "block.crystal.fall": {
+    "sounds": ["mether:block/crystal/fall"]
+  },
+  "item.crystal.equip": {
+    "sounds": ["mether:item/crystal/equip"]
+  },
+  "item.crystal.pickup": {
+    "sounds": ["mether:item/crystal/pickup"]
+  },
+  "mob.crystal_golem.ambient": {
+    "sounds": ["mether:mob/crystal_golem/ambient"]
+  },
+  "mob.crystal_golem.hurt": {
+    "sounds": ["mether:mob/crystal_golem/hurt"]
+  },
+  "mob.crystal_golem.death": {
+    "sounds": ["mether:mob/crystal_golem/death"]
+  },
+  "mob.crystal_spider.ambient": {
+    "sounds": ["mether:mob/crystal_spider/ambient"]
+  },
+  "mob.crystal_spider.hurt": {
+    "sounds": ["mether:mob/crystal_spider/hurt"]
+  },
+  "mob.crystal_spider.death": {
+    "sounds": ["mether:mob/crystal_spider/death"]
+  },
+  "mob.shadow_wraith.ambient": {
+    "sounds": ["mether:mob/shadow_wraith/ambient"]
+  },
+  "mob.shadow_wraith.hurt": {
+    "sounds": ["mether:mob/shadow_wraith/hurt"]
+  },
+  "mob.shadow_wraith.death": {
+    "sounds": ["mether:mob/shadow_wraith/death"]
+  },
+  "mob.crystal_mage.ambient": {
+    "sounds": ["mether:mob/crystal_mage/ambient"]
+  },
+  "mob.crystal_mage.hurt": {
+    "sounds": ["mether:mob/crystal_mage/hurt"]
+  },
+  "mob.crystal_mage.death": {
+    "sounds": ["mether:mob/crystal_mage/death"]
+  },
+  "mob.crystal_mage.cast": {
+    "sounds": ["mether:mob/crystal_mage/cast"]
+  },
+  "mob.unstable_elemental.ambient": {
+    "sounds": ["mether:mob/unstable_elemental/ambient"]
+  },
+  "mob.unstable_elemental.hurt": {
+    "sounds": ["mether:mob/unstable_elemental/hurt"]
+  },
+  "mob.unstable_elemental.death": {
+    "sounds": ["mether:mob/unstable_elemental/death"]
+  },
+  "mob.unstable_elemental.explode": {
+    "sounds": ["mether:mob/unstable_elemental/explode"]
+  },
+  "mob.luminarch.ambient": {
+    "sounds": ["mether:mob/luminarch/ambient"]
+  },
+  "mob.luminarch.hurt": {
+    "sounds": ["mether:mob/luminarch/hurt"]
+  },
+  "mob.luminarch.death": {
+    "sounds": ["mether:mob/luminarch/death"]
+  },
+  "mob.luminarch.attack": {
+    "sounds": ["mether:mob/luminarch/attack"]
+  },
+  "mob.luminarch.roar": {
+    "sounds": ["mether:mob/luminarch/roar"]
+  },
+  "music.crystal_plains": {
+    "sounds": ["mether:music/crystal_plains"]
+  },
+  "music.crystal_forest": {
+    "sounds": ["mether:music/crystal_forest"]
+  },
+  "music.boss.luminarch": {
+    "sounds": ["mether:music/boss/luminarch"]
+  }
+}

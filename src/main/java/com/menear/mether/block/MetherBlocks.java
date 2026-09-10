@@ -2,12 +2,16 @@ package com.menear.mether.block;
 
 import com.menear.mether.Mether;
 import com.menear.mether.block.custom.MetherPortalBlock;
+import com.menear.mether.block.entity.CrystalForgeBlockEntity;
+import com.menear.mether.block.entity.CrystalInfuserBlockEntity;
 import com.menear.mether.util.CrystalType;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -37,6 +41,17 @@ public class MetherBlocks {
     // Pure Crystal Blocks
     public static final Map<CrystalType, Block> CRYSTAL_BLOCKS = new HashMap<>();
     
+    // Crafting Stations
+    public static final Block CRYSTAL_FORGE = registerBlock("crystal_forge",
+        new Block(AbstractBlock.Settings.copy(Blocks.SMITHING_TABLE).luminance(state -> 8)));
+    
+    public static final Block CRYSTAL_INFUSER = registerBlock("crystal_infuser",
+        new Block(AbstractBlock.Settings.copy(Blocks.ENCHANTING_TABLE).luminance(state -> 8)));
+    
+    // Block Entity Types
+    public static BlockEntityType<CrystalForgeBlockEntity> CRYSTAL_FORGE_BLOCK_ENTITY;
+    public static BlockEntityType<CrystalInfuserBlockEntity> CRYSTAL_INFUSER_BLOCK_ENTITY;
+    
     // Portal Frame
     public static final Block LUMINITE_PORTAL_FRAME = registerBlock("luminite_portal_frame",
         new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN).luminance(state -> 5)));
@@ -63,8 +78,17 @@ public class MetherBlocks {
                 new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK)
                     .luminance(state -> 10)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-            CRYSTAL_BLOCKS.put(type, crystalBlock);
+            CRYSTAL_BLOCKS.put(crystalBlock);
         }
+        
+        // Register block entity types
+        CRYSTAL_FORGE_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+            Identifier.of(Mether.MOD_ID, "crystal_forge"),
+            FabricBlockEntityTypeBuilder.create(CrystalForgeBlockEntity::new, CRYSTAL_FORGE).build());
+        
+            CRYSTAL_INFUSER_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+            Identifier.of(Mether.MOD_ID, "crystal_infuser"),
+            FabricBlockEntityTypeBuilder.create(CrystalInfuserBlockEntity::new, CRYSTAL_INFUSER).build());
     }
     
     private static Block registerBlock(String name, Block block) {

@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:shadow_wraith",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}

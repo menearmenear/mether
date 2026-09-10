@@ -1,0 +1,9 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "id": "mether:crystal_mage",
+      "summonable": true,
+      "spawnable": true
+    }
+  }
+}
