@@ -3,6 +3,7 @@ package com.menear.mether;
 import com.menear.mether.block.MetherBlocks;
 import com.menear.mether.entity.MetherEntities;
 import com.menear.mether.item.MetherItems;
+import com.menear.mether.item.MetherFoodItems;
 import com.menear.mether.item.armor.MetherArmorItems;
 import com.menear.mether.item.tool.MetherToolItems;
 import com.menear.mether.sound.MetherSounds;
@@ -23,6 +24,7 @@ public class Mether implements ModInitializer {
         MetherItems.initialize();
         MetherToolItems.initialize();
         MetherArmorItems.initialize();
+        MetherFoodItems.initialize();
         MetherDimension.initialize();
         MetherEntities.initialize();
         MetherSounds.initialize();
