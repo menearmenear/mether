@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" R ", " R ", " B "],
+  "key": {
+    "R": { "item": "mether:refined_rubicite" },
+    "B": { "item": "minecraft:stick" }
+  },
+  "result": { "id": "mether:rubicite_sword", "count": 1 }
+}

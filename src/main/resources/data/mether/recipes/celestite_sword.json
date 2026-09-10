@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" R ", " R ", " B "],
+  "key": {
+    "R": { "item": "mether:refined_celestite" },
+    "B": { "item": "minecraft:stick" }
+  },
+  "result": { "id": "mether:celestite_sword", "count": 1 }
+}
