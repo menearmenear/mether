@@ -1,0 +1,248 @@
+<mainpage-leftcolumn-start />
+<!-- Keep this code block: it is required by Fandom's main-page layout. -->
+
+Welcome to the '''Mether Wiki'''! Mether is a large-scale Minecraft Fabric dimension mod by '''menear''' that adds an entire crystal dimension, 10 crystal types across 4 equipment tiers, 8 custom biomes, new mobs and bosses, and a full progression system. This wiki is an encyclopedia written by fans for fans — anyone can edit!
+
+==How to get to the Mether==
+The Mether is a separate dimension that you can reach with a '''[[Luminite Portal]]''':
+
+# Mine '''luminite ore''' (found in the Overworld as a rare deepstone ore) and smelt the shards into '''refined luminite''', or combine 9 luminite shards into a '''luminite block'''.
+# Craft '''crystal stone''' from the Mod's stone and build the '''luminite portal frame''' (recipe: luminite blocks + crystal stone).
+# Light the frame to activate the '''Mether portal''' - stepping through it teleports you to the Mether dimension. Touching the portal again (or a portal built back home) returns you to the Overworld.
+# Bring a '''teleportation crystal''' for emergency travel back to your spawn point.
+
+{{crafting
+|l1=Luminite Block|l2=Crystal Stone|l3=Luminite Block
+|ml=Crystal Stone|blank=Air|mr=Crystal Stone
+|bl=Luminite Block|b2=Crystal Stone|b3=Luminite Block
+|Output=Luminite Portal Frame}}
+{{smelting|Luminite Shard|Refined Luminite}}
+
+==The Mether dimension==
+The dimension key is <code>mether:mether</code>. It generates as a glowing, crystal-studded world with luminous terrain, its own decoration, and 8 hand-crafted biomes:
+
+{| class="wikitable sortable"
+|-
+! Biome !! Theme
+|-
+| Crystal Plains || Bright open plains carpeted in luminous grass
+|-
+| Crimson Crystal Forest || Red crystal forest dotted with fire-themed growth
+|-
+| Frozen Crystal Tundra || Icy, cold biome with snow-covered crystal terrain
+|-
+| Verdant Crystal Grove || Lush green grove rich in vegetation and berries
+|-
+| Stormpeak Mountains || Towering peaks struck by lightning storms
+|-
+| Amethyst Caverns || Deep underground caverns crowded with amethine crystal
+|-
+| Shadowlands || Dark, eerie region where obsidite and shadow creatures dwell
+|-
+| Celestial Islands || Floating sky islands high above the world
+|}
+
+==The Crystals==
+There are '''10 crystal types''' arranged in 4 tiers. Each has a unique color, theme, ore, block, raw shard, refined form, tool set, and armor set.
+
+{| class="wikitable sortable"
+|-
+! Crystal !! Color !! Theme !! Tier
+|-
+| [[Luminite]] || White / Silver || Basic light || 1
+|-
+| [[Rubicite]] || Red || Fire || 2
+|-
+| [[Sapphirite]] || Blue || Water / Ice || 2
+|-
+| [[Emerite]] || Green || Nature || 2
+|-
+| [[Citrite]] || Yellow || Lightning || 2
+|-
+| [[Amethine]] || Purple || Magic || 3
+|-
+| [[Obsidite]] || Black || Shadow || 3
+|-
+| [[Celestite]] || Cyan || Sky || 3
+|-
+| [[Pyrope]] || Orange || Energy || 3
+|-
+| [[Prismarite]] || Magenta || Rainbow (all) || 4
+|}
+
+<gallery position="center" captionalign="center" navigation="true">
+|[[Luminite]] - the basic tier 1 crystal
+</gallery>
+
+===Equipment Stats===
+{| class="wikitable sortable"
+|-
+! Tier !! Tool Durability !! Mining Speed !! Bonus Attack Damage !! Armor Durability !! Total Protection !! Toughness !! Enchantability
+|-
+| 1 (Luminite) || 500 || 6.0 || +2 || 15 || 15 || 0.0 || 15
+|-
+| 2 (Elemental) || 1561 || 8.0 || +3 || 33 || 20 || 2.0 || 20
+|-
+| 3 (Advanced) || 2500 || 10.0 || +4 || 40 || 22 || 3.0 || 25
+|-
+| 4 (Prismarite) || 3500 || 12.0 || +5 || 50 || 26 || 4.0 || 30
+|}
+Every crystal tier includes a full '''pickaxe, axe, shovel, hoe, sword''', and a '''helmet, chestplate, leggings, boots''' armor set. Tools repair with refined crystals, armor repairs with refined crystals too. Higher tiers have knockback resistance (Tier 3: 0.1, Tier 4: 0.2).
+
+==Items & Blocks==
+===Blocks===
+* '''Terrain:''' Crystal Grass Block, Crystal Dirt, Crystal Stone (all glow slightly)
+* '''Ore & Storage:''' one ore block + one pure crystal block per crystal type (10 each)
+* '''Crafting stations:''' [[Crystal Forge]] and [[Crystal Infuser]] (luminous, enchantment-table style stations)
+* '''[[Luminite Portal Frame]]''' and the '''Mether Portal''' block
+
+===Food===
+{| class="wikitable"
+|-
+! Item !! Effect
+|-
+| Crystal Berries || Snack that gives Glowing
+|-
+| Glowing Mushroom || Snack that gives Night Vision
+|-
+| Crystal Honey || Drink that gives Regeneration
+|-
+| Crystal Apple || Gives Absorption (+ Resistance chance)
+|-
+| Luminite Fruit || Edible anytime; gives Regeneration II and Glowing
+|}
+
+===Special Items===
+{| class="wikitable"
+|-
+! Item !! Purpose
+|-
+| Crystal Dust || Basic crafting ingredient (also dropped by crystal butterflies)
+|-
+| Crystal Key || Crafting ingredient; a key forged from diamonds and luminite
+|-
+| Luminite Stone || Unique material item
+|-
+| Crystal Resonator || Tool category item
+|-
+| Crystal Compass || Tool category item
+|-
+| Growth Catalyst || Tool category item
+|-
+| Teleportation Crystal || Emergency teleport back to spawn (max stack of 4)
+|-
+| Crystal Lens || Tool category item
+|-
+| Energy Cell || Tool category item
+|-
+| Boss Cores || One unique core per tier-2-or-higher crystal, dropped by bosses
+|}
+
+==Mobs & Bosses==
+{Mobs that live in the glowing crystal lands}
+
+{| class="wikitable sortable"
+|-
+! Name !! Type !! Notes
+|-
+| [[Crystal Butterfly]] || Passive || Flies around; drops Crystal Dust; can be bred
+|-
+| [[Lumina Sheep]] || Passive || Sheep-like creature of the crystal plains
+|-
+| [[Crystal Golem]] || Hostile || Heavy armored guardian (16 HP)
+|-
+| [[Crystal Spider]] || Hostile || Climbing crystal spider (16 HP)
+|-
+| [[Shadow Wraith]] || Hostile || Flying phantom-like enemy
+|-
+| [[Crystal Mage]] || Hostile || Ranged attacker that throws projectiles (24 HP)
+|-
+| [[Unstable Elemental]] || Hostile || Explodes on death (12 HP)
+|-
+| [[Luminarch]] || Boss || Tier 1 boss with a boss bar (350 HP); drops Luminite Core
+|}
+
+===Bosses (planned / files included)===
+The mod ships 6 additional boss classes with loot tables, planned for future updates:
+[[Frost Crystal Leviathan]], [[Verdant Crystal Hydra]], [[Storm Crystal Dragon]], [[Infernal Crystal Titan]], [[Void Crystal Serpent]], [[Prismatic Overlord]].
+
+Each tier-2+ boss is designed to drop that crystal's '''Boss Core'''.
+
+==Progression & Advancements==
+The mod includes 5 advancements:
+* '''Root''' - start your journey into Mether
+* '''Crystal Collector''' - gather every crystal type
+* '''Luminarch Defeat''' - defeat the Luminarch boss
+* '''Prismatic Gear''' - craft full prismarite equipment
+* '''All Bosses Defeated''' - triumph over every boss
+
+==Crafting Stations (upcoming)==
+The '''Crystal Forge''' and '''Crystal Infuser''' blocks exist with container inventories, but their graphical interfaces are still in development for this alpha version.
+
+==Soundtrack & Audio==
+Custom synthesized sounds are included for:
+* Portal activation, ambient, and travel
+* Crystal block place/break/step/hit/fall
+* Crystal item equip and pickup
+* Every mob's ambient/hurt/death sounds (plus crystal mage cast and elemental explode)
+* The Luminarch's attack and roar
+* Music for Crystal Plains, Crystal Forest, and the Luminarch boss fight
+
+==Installation==
+<gallery position="center" captionalign="center" navigation="true">
+|Installation steps
+</gallery>
+* '''MC Version:''' 1.21.11 (Fabric)
+* '''Requires:''' Fabric Loader 0.19.5+, Fabric API
+* '''Download:''' [https://github.com/menearmenear/mether/releases GitHub Releases] (current: v1.0.0-alpha.1)
+* '''Source:''' [https://github.com/menearmenear/mether GitHub Repository]
+* Drop the <code>.jar</code> into your <code>mods</code> folder.
+
+''Note: this is an early Alpha. Some intended features (crafting-station GUIs, full boss spawning, some natural mob spawns) are not fully implemented yet.''
+
+<!-- Gallery below links to category pages for deeper exploration -->
+==Explore more==
+<gallery position="center" captionalign="center" navigation="true">
+|[[Biomes]]
+|[[Crystals]]
+|[[Mobs]]
+|[[Bosses]]
+|[[Items]]
+|[[Crafting]]
+</gallery>
+
+<mainpage-endcolumn /><mainpage-rightcolumn-start />
+<!-- Keep these two lines: they close the left column and open the right column. -->
+
+==About==
+'''Mether ''' is a Minecraft '''Fabric''' dimension mod that adds a complete crystal-themed dimension with:
+* 10 crystals / 4 tiers
+* 8 custom biomes
+* 7+ hostile & passive mobs and 7 boss designs
+* Full tool & armor sets
+* Custom sounds, music, and advancement tree
+
+Web: [https://github.com/menearmenear/mether GitHub]
+Version: '''1.0.0-alpha.1''' (MC 1.21.11)
+
+==Join the conversation==
+Have feedback or a bug to report? Open a [https://github.com/menearmenear/mether/issues GitHub Issue] and share your experience with the mod. This wiki is community-driven — add screenshots, stats, or your own guides!
+
+==Helping out==
+''Need help building out this community?''
+*[[Project:Wiki rules|Rules of this wiki]]
+*[[Project:Policies|Policies of this wiki]]
+*[[w:Help:Getting Started|Getting started]]
+*[[w:Help:Contributing|How to contribute]]
+*[[w:Help:Community Management|Managing your community]]
+*[[w:Help:Growing your wiki|Growing your wiki]]
+*[[w:Help:Contents|Guides]]
+
+You can also be part of the larger Fandom family of communities. Visit [[w:c:community|Fandom's Community Central]]!
+
+<mainpage-endcolumn />
+[[Category:Mether]]
+
+[[Category:Mod]]
+__NOTOC__
+__NOEDITSECTION__
