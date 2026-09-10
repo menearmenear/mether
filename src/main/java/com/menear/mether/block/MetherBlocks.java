@@ -1,0 +1,73 @@
+package com.menear.mether.block;
+
+import com.menear.mether.Mether;
+import com.menear.mether.util.CrystalType;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MetherBlocks {
+    
+    // Terrain Blocks
+    public static final Block CRYSTAL_GRASS_BLOCK = registerBlock("crystal_grass_block",
+        new Block(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK).luminance(state -> 3)));
+    
+    public static final Block CRYSTAL_DIRT = registerBlock("crystal_dirt",
+        new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
+    
+    public static final Block CRYSTAL_STONE = registerBlock("crystal_stone",
+        new Block(AbstractBlock.Settings.copy(Blocks.STONE).luminance(state -> 2)));
+    
+    // Crystal Ore Blocks (for each crystal type)
+    public static final Map<CrystalType, Block> CRYSTAL_ORES = new HashMap<>();
+    
+    // Pure Crystal Blocks
+    public static final Map<CrystalType, Block> CRYSTAL_BLOCKS = new HashMap<>();
+    
+    // Portal Frame
+    public static final Block LUMINITE_PORTAL_FRAME = registerBlock("luminite_portal_frame",
+        new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN).luminance(state -> 5)));
+    
+    static {
+        // Register crystal ores
+        for (CrystalType type : CrystalType.values()) {
+            Block ore = registerBlock(type.getName() + "_ore",
+                new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE)
+                    .luminance(state -> 7)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            CRYSTAL_ORES.put(type, ore);
+            
+            Block crystalBlock = registerBlock(type.getName() + "_block",
+                new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK)
+                    .luminance(state -> 10)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            CRYSTAL_BLOCKS.put(type, crystalBlock);
+        }
+    }
+    
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Mether.MOD_ID, name), block);
+    }
+    
+    private static void registerBlockItem(String name, Block block) {
+        Item item = Registry.register(Registries.ITEM, Identifier.of(Mether.MOD_ID, name),
+            new BlockItem(block, new Item.Settings()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.add(item));
+    }
+    
+    public static void initialize() {
+        Mether.LOGGER.info("Registering blocks for " + Mether.MOD_ID);
+    }
+}
