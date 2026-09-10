@@ -18,7 +18,7 @@ public abstract class PlayerMixin {
     @Inject(method = "getDimensions", at = @At("HEAD"), cancellable = true)
     private void onGetDimensions(EntityPose pose, CallbackInfoReturnable<EntityDimensions> cir) {
         PlayerEntity self = (PlayerEntity) (Object) this;
-        if (self.getWorld().getRegistryKey() == MetherDimension.WORLD_KEY) {
+        if (self.getEntityWorld().getRegistryKey() == MetherDimension.WORLD_KEY) {
             // Players are slightly smaller in the Mether for thematic effect
             cir.setReturnValue(EntityDimensions.changing(0.6f, 1.7f));
         }

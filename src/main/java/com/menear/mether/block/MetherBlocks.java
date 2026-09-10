@@ -6,7 +6,7 @@ import com.menear.mether.block.entity.CrystalForgeBlockEntity;
 import com.menear.mether.block.entity.CrystalInfuserBlockEntity;
 import com.menear.mether.util.CrystalType;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockEntityTypeBuilder;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -78,7 +78,7 @@ public class MetherBlocks {
                 new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK)
                     .luminance(state -> 10)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-            CRYSTAL_BLOCKS.put(crystalBlock);
+            CRYSTAL_BLOCKS.put(type, crystalBlock);
         }
         
         // Register block entity types

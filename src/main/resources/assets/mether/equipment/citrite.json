@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mether:citrite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mether:citrite"
+      }
+    ]
+  }
+}

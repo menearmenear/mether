@@ -2,7 +2,6 @@ package com.menear.mether.entity.mob;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
@@ -36,15 +35,7 @@ public class CrystalSpiderEntity extends HostileEntity {
         this.targetSelector.add(1, new TargetGoal(this, PlayerEntity.class, true));
     }
     
-    @Override
-    public boolean canClimb() {
-        return true;
-    }
     
-    @Override
-    public int getLuminance() {
-        return 4;
-    }
     
     private static class ClimbOntopOfCrystalSpiderGoal extends Goal {
         private final CrystalSpiderEntity spider;

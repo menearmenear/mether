@@ -1,100 +1,80 @@
 package com.menear.mether.block.entity;
 
+import com.menear.mether.Mether;
 import com.menear.mether.block.MetherBlocks;
+import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.LockableContainerBlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.component.ComponentMap;
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.ComponentsAccess;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventories;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 
 public class CrystalInfuserBlockEntity extends LockableContainerBlockEntity {
-    
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(6, ItemStack.EMPTY);
+
+    public static final ComponentType<Integer> INFUSION_PROGRESS = Registry.register(
+        Registries.DATA_COMPONENT_TYPE,
+        Identifier.of(Mether.MOD_ID, "infusion_progress"),
+        ComponentType.<Integer>builder().codec(Codec.INT).build()
+    );
+
+    private DefaultedList<ItemStack> inventory = DefaultedList.ofSize(6, ItemStack.EMPTY);
     private int infusionProgress = 0;
-    
+
     public CrystalInfuserBlockEntity(BlockPos pos, BlockState state) {
         super(MetherBlocks.CRYSTAL_INFUSER_BLOCK_ENTITY, pos, state);
     }
-    
-    @Override
-    public Text getDisplayName() {
-        return Text.translatable("container.mether.crystal_infuser");
-    }
-    
+
     @Override
     protected Text getContainerName() {
         return Text.translatable("container.mether.crystal_infuser");
     }
-    
+
+    @Override
+    protected DefaultedList<ItemStack> getHeldStacks() {
+        return inventory;
+    }
+
+    @Override
+    protected void setHeldStacks(DefaultedList<ItemStack> list) {
+        inventory = list;
+    }
+
     @Override
     protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {
         return null;
     }
-    
+
     @Override
     public int size() {
         return 6;
     }
-    
+
     @Override
-    public boolean isEmpty() {
-        return inventory.stream().allMatch(ItemStack::isEmpty);
+    protected void readComponents(ComponentsAccess components) {
+        super.readComponents(components);
+        this.infusionProgress = components.getOrDefault(INFUSION_PROGRESS, 0);
     }
-    
+
     @Override
-    public ItemStack getStack(int slot) {
-        return inventory.get(slot);
+    protected void addComponents(ComponentMap.Builder builder) {
+        super.addComponents(builder);
+        builder.add(INFUSION_PROGRESS, this.infusionProgress);
     }
-    
-    @Override
-    public ItemStack removeStack(int slot, int amount) {
-        return Inventories.splitStack(inventory, slot, amount);
-    }
-    
-    @Override
-    public ItemStack removeStack(int slot) {
-        return Inventories.removeStack(inventory, slot);
-    }
-    
-    @Override
-    public void setStack(int slot, ItemStack stack) {
-        inventory.set(slot, stack);
-        if (stack.getCount() > getMaxCount(stack)) {
-            stack.setCount(getMaxCount(stack));
-        }
-    }
-    
-    @Override
-    public boolean canPlayerUse(PlayerEntity player) {
-        return canUse(player, MetherBlocks.CRYSTAL_INFUSER, player.getBlockPos());
-    }
-    
-    @Override
-    public void clear() {
-        inventory.clear();
-    }
-    
-    @Override
-    protected void readNbt(NbtCompound nbt) {
-        super.readNbt(nbt);
-        Inventories.readNbt(nbt, inventory);
-        this.infusionProgress = nbt.getInt("InfusionProgress");
-    }
-    
-    @Override
-    protected void writeNbt(NbtCompound nbt) {
-        super.writeNbt(nbt);
-        Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("InfusionProgress", infusionProgress);
-    }
-    
+
     public int getInfusionProgress() {
         return infusionProgress;
+    }
+
+    public void setInfusionProgress(int progress) {
+        this.infusionProgress = progress;
     }
 }

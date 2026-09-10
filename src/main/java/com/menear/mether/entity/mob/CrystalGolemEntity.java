@@ -2,7 +2,6 @@ package com.menear.mether.entity.mob;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
@@ -37,10 +36,6 @@ public class CrystalGolemEntity extends HostileEntity {
         this.targetSelector.add(1, new TargetGoal(this, PlayerEntity.class, true));
     }
     
-    @Override
-    public int getLuminance() {
-        return 6;
-    }
     
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {
         public TargetGoal(CrystalGolemEntity mob, Class<PlayerEntity> targetClass, boolean checkVisibility) {

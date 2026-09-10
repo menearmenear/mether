@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mether:obsidite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mether:obsidite"
+      }
+    ]
+  }
+}

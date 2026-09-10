@@ -3,7 +3,6 @@ package com.menear.mether.entity.mob;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.control.FlightMoveControl;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
@@ -38,15 +37,7 @@ public class ShadowWraithEntity extends HostileEntity {
         this.targetSelector.add(1, new TargetGoal(this, PlayerEntity.class, true));
     }
     
-    @Override
-    public boolean isFlying() {
-        return true;
-    }
     
-    @Override
-    public int getLuminance() {
-        return 2;
-    }
     
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {
         public TargetGoal(ShadowWraithEntity mob, Class<PlayerEntity> targetClass, boolean checkVisibility) {

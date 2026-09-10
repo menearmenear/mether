@@ -37,8 +37,8 @@ public class CrystalButterflyEntity extends AnimalEntity {
     }
     
     @Override
-    public boolean isFlying() {
-        return !this.isOnGround();
+    public boolean isBreedingItem(ItemStack stack) {
+        return stack.isOf(MetherItems.CRYSTAL_DUST);
     }
     
     @Override
@@ -47,8 +47,8 @@ public class CrystalButterflyEntity extends AnimalEntity {
     }
     
     @Override
-    protected void dropLoot(net.minecraft.damage.DamageSource source, boolean causedByPlayer) {
+    protected void dropLoot(ServerWorld world, net.minecraft.entity.damage.DamageSource source, boolean causedByPlayer) {
         ItemStack stack = new ItemStack(MetherItems.CRYSTAL_DUST);
-        this.dropStack(stack);
+        this.dropItem(stack, false, false);
     }
 }

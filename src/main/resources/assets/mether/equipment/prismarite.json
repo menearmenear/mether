@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mether:prismarite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mether:prismarite"
+      }
+    ]
+  }
+}

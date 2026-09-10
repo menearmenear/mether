@@ -9,7 +9,6 @@ import com.menear.mether.item.tool.MetherToolItems;
 import com.menear.mether.particle.MetherParticles;
 import com.menear.mether.sound.MetherSounds;
 import com.menear.mether.item.MetherSpecialItems;
-import com.menear.mether.screen.MetherScreenHandlers;
 import com.menear.mether.world.dimension.MetherDimension;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -33,7 +32,6 @@ public class Mether implements ModInitializer {
         MetherSounds.initialize();
         MetherParticles.initialize();
         MetherSpecialItems.initialize();
-        MetherScreenHandlers.initialize();
         
         LOGGER.info("Mether mod initialized successfully! All {} registrations complete.", MOD_ID);
     }

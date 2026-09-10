@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mether:amethine"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mether:amethine"
+      }
+    ]
+  }
+}

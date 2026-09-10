@@ -2,7 +2,6 @@ package com.menear.mether.entity.boss;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -10,7 +9,7 @@ import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
@@ -48,7 +47,7 @@ public class VoidCrystalSerpentEntity extends HostileEntity {
     @Override
     public void tick() {
         super.tick();
-        if (!this.getWorld().isClient) {
+        if (!this.getEntityWorld().isClient()) {
             this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
         }
     }
@@ -60,15 +59,11 @@ public class VoidCrystalSerpentEntity extends HostileEntity {
     }
 
     @Override
-    public void onStartTrackingBy(ServerPlayerEntity player) {
-        super.onStartTrackingBy(player);
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
         this.bossBar.addPlayer(player);
     }
 
-    @Override
-    public int getLuminance() {
-        return 3;
-    }
 
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {
         public TargetGoal(VoidCrystalSerpentEntity mob, Class<PlayerEntity> targetClass, boolean checkVisibility) {

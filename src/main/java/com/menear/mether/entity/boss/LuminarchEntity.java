@@ -2,7 +2,6 @@ package com.menear.mether.entity.boss;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -46,14 +45,9 @@ public class LuminarchEntity extends HostileEntity {
     }
     
     @Override
-    public void mobInteract(PlayerEntity player, net.minecraft.util.Hand hand) {
-        return;
-    }
-    
-    @Override
     public void tick() {
         super.tick();
-        if (!this.getWorld().isClient) {
+        if (!this.getEntityWorld().isClient()) {
             this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
         }
     }
@@ -65,15 +59,11 @@ public class LuminarchEntity extends HostileEntity {
     }
     
     @Override
-    public void onStartTrackingBy(ServerPlayerEntity player) {
-        super.onStartTrackingBy(player);
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
         this.bossBar.addPlayer(player);
     }
     
-    @Override
-    public int getLuminance() {
-        return 15;
-    }
     
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {
         public TargetGoal(LuminarchEntity mob, Class<PlayerEntity> targetClass, boolean checkVisibility) {

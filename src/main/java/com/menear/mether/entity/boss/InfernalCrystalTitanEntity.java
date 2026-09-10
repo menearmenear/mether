@@ -2,7 +2,6 @@ package com.menear.mether.entity.boss;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -10,7 +9,7 @@ import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -51,7 +50,7 @@ public class InfernalCrystalTitanEntity extends HostileEntity {
     @Override
     public void tick() {
         super.tick();
-        if (!this.getWorld().isClient) {
+        if (!this.getEntityWorld().isClient()) {
             this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
             this.fireTimer++;
             if (this.fireTimer >= 60) {
@@ -64,8 +63,8 @@ public class InfernalCrystalTitanEntity extends HostileEntity {
     private void createFire() {
         BlockPos origin = this.getBlockPos();
         for (BlockPos pos : BlockPos.iterate(origin.add(-2, 0, -2), origin.add(2, 0, 2))) {
-            if (this.getWorld().isAir(pos) && !pos.equals(origin)) {
-                this.getWorld().setBlockState(pos, net.minecraft.block.Blocks.FIRE.getDefaultState());
+            if (this.getEntityWorld().isAir(pos) && !pos.equals(origin)) {
+                this.getEntityWorld().setBlockState(pos, net.minecraft.block.Blocks.FIRE.getDefaultState());
             }
         }
     }
@@ -77,15 +76,11 @@ public class InfernalCrystalTitanEntity extends HostileEntity {
     }
 
     @Override
-    public void onStartTrackingBy(ServerPlayerEntity player) {
-        super.onStartTrackingBy(player);
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
         this.bossBar.addPlayer(player);
     }
 
-    @Override
-    public int getLuminance() {
-        return 14;
-    }
 
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {
         public TargetGoal(InfernalCrystalTitanEntity mob, Class<PlayerEntity> targetClass, boolean checkVisibility) {

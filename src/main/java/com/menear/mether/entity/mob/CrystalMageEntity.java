@@ -1,16 +1,21 @@
 package com.menear.mether.entity.mob;
 
+import com.menear.mether.util.CrystalType;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ai.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.thrown.SnowballEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.world.World;
 
-public class CrystalMageEntity extends HostileEntity {
+public class CrystalMageEntity extends HostileEntity implements RangedAttackMob {
     
     public CrystalMageEntity(EntityType<? extends CrystalMageEntity> entityType, World world) {
         super(entityType, world);
@@ -37,8 +42,13 @@ public class CrystalMageEntity extends HostileEntity {
     }
     
     @Override
-    public int getLuminance() {
-        return 7;
+    public void shootAt(LivingEntity target, float pullProgress) {
+        SnowballEntity snowball = new SnowballEntity(this.getEntityWorld(), this, new ItemStack(Items.SNOWBALL));
+        double dx = target.getX() - this.getX();
+        double dy = target.getBodyY(0.5) - this.getBodyY(0.5);
+        double dz = target.getZ() - this.getZ();
+        snowball.setVelocity(dx, dy, dz, 1.5f, 1.0f);
+        this.getEntityWorld().spawnEntity(snowball);
     }
     
     public static class TargetGoal extends ActiveTargetGoal<PlayerEntity> {

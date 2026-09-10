@@ -2,7 +2,6 @@ package com.menear.mether.entity.mob;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.targeting.TargetingConditions;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
@@ -34,15 +33,11 @@ public class UnstableElementalEntity extends HostileEntity {
         this.targetSelector.add(1, new TargetGoal(this, PlayerEntity.class, true));
     }
     
-    @Override
-    public int getLuminance() {
-        return 12;
-    }
     
     @Override
-    public void onDeath(net.minecraft.damage.DamageSource source) {
-        if (!this.getWorld().isClient) {
-            this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), 3.0f, World.ExplosionSourceType.MOB);
+    public void onDeath(net.minecraft.entity.damage.DamageSource source) {
+        if (!this.getEntityWorld().isClient()) {
+            this.getEntityWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), 3.0f, World.ExplosionSourceType.MOB);
         }
         super.onDeath(source);
     }

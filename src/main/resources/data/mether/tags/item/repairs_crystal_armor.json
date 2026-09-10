@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mether:refined_luminite", "mether:refined_rubicite", "mether:refined_sapphirite",
+    "mether:refined_emerite", "mether:refined_citrite", "mether:refined_amethine",
+    "mether:refined_obsidite", "mether:refined_celestite", "mether:refined_pyrope",
+    "mether:refined_prismarite"
+  ]
+}

@@ -8,6 +8,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 
@@ -33,9 +34,10 @@ public class LuminaSheepEntity extends AnimalEntity {
         this.goalSelector.add(4, new LookAroundGoal(this));
     }
     
+    
     @Override
-    public int getLuminance() {
-        return 8;
+    public boolean isBreedingItem(ItemStack stack) {
+        return false;
     }
     
     @Override

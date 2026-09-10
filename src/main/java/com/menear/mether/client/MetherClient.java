@@ -4,29 +4,27 @@ import com.menear.mether.block.MetherBlocks;
 import com.menear.mether.util.CrystalType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.entity.EntityType;
+import net.minecraft.client.render.BlockRenderLayer;
 
 public class MetherClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         // Register translucent render layer for crystal blocks
         for (CrystalType type : CrystalType.values()) {
-            BlockRenderLayerMap.INSTANCE.putBlock(
+            BlockRenderLayerMap.putBlock(
                 MetherBlocks.CRYSTAL_BLOCKS.get(type),
-                RenderLayer.getTranslucent()
+                BlockRenderLayer.TRANSLUCENT
             );
-            BlockRenderLayerMap.INSTANCE.putBlock(
+            BlockRenderLayerMap.putBlock(
                 MetherBlocks.CRYSTAL_ORES.get(type),
-                RenderLayer.getTranslucent()
+                BlockRenderLayer.TRANSLUCENT
             );
         }
-        
+
         // Portal block render layer
-        BlockRenderLayerMap.INSTANCE.putBlock(
+        BlockRenderLayerMap.putBlock(
             MetherBlocks.METHER_PORTAL,
-            RenderLayer.getTranslucent()
+            BlockRenderLayer.TRANSLUCENT
         );
     }
 }
